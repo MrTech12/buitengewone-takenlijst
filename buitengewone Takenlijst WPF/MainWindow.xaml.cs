@@ -45,6 +45,38 @@ namespace buitengewone_Takenlijst_WPF
                 huidigeTakenIndex++;
                 huidigeTakenCount++;
             }
+
+            else if (selectDagCB.SelectedIndex == 1)
+            {
+                huidigeTaken.Add(gebruikersInvoer);
+                lijstDiLB.Items.Add(huidigeTaken.ElementAt(huidigeTakenIndex));
+                huidigeTakenIndex++;
+                huidigeTakenCount++;
+            }
+
+            else if (selectDagCB.SelectedIndex == 2)
+            {
+                huidigeTaken.Add(gebruikersInvoer);
+                lijstWoLB.Items.Add(huidigeTaken.ElementAt(huidigeTakenIndex));
+                huidigeTakenIndex++;
+                huidigeTakenCount++;
+            }
+
+            else if (selectDagCB.SelectedIndex == 3)
+            {
+                huidigeTaken.Add(gebruikersInvoer);
+                lijstDoLB.Items.Add(huidigeTaken.ElementAt(huidigeTakenIndex));
+                huidigeTakenIndex++;
+                huidigeTakenCount++;
+            }
+
+            else if (selectDagCB.SelectedIndex == 4)
+            {
+                huidigeTaken.Add(gebruikersInvoer);
+                lijstVrLB.Items.Add(huidigeTaken.ElementAt(huidigeTakenIndex));
+                huidigeTakenIndex++;
+                huidigeTakenCount++;
+            }
             aantalTaakLB.Content = Convert.ToString(huidigeTakenCount);
         }
 

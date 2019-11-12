@@ -19,14 +19,13 @@
 
         <Grid.RowDefinitions>
             <RowDefinition />
-            <RowDefinition Height="Auto"/>
             <RowDefinition />
-            <RowDefinition Height="Auto"/>
             <RowDefinition />
         </Grid.RowDefinitions>
 
         <Label Grid.Column="0" Margin="0, 5, 0, 0" Content="Naam van taak"></Label>
         <Label Grid.Column="0" Margin="0, 28, 0, 0" Content="Vervaldatum"></Label>
+
         <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="100, 10, 0, 80">
             <TextBox Name="userInputTB"></TextBox>
             <ComboBox Name="selectDagCB" Margin="0, 3, 0, 0">
@@ -49,11 +48,11 @@
             <Button Margin="0, 10, 0, 0" Content="Taak verwijderen"></Button>
         </StackPanel>
         
-        <ListBox Grid.Row="2" Grid.Column="0" Margin="5" Name="lijstMaLB"></ListBox>
-        <ListBox Grid.Row="2" Grid.Column="1" Margin="5" Name="lijstDiLB"></ListBox>
-        <ListBox Grid.Row="2" Grid.Column="2" Margin="5" Name="lijstWoLB"></ListBox>
-        <ListBox Grid.Row="2" Grid.Column="3" Margin="5" Name="lijstDoLB"></ListBox>
-        <ListBox Grid.Row="2" Grid.Column="4" Margin="5" Name="lijstVrLB"></ListBox>
+        <ListBox Grid.Row="1" Grid.Column="0" Margin="5" Name="lijstMaLB"></ListBox>
+        <ListBox Grid.Row="1" Grid.Column="1" Margin="5" Name="lijstDiLB"></ListBox>
+        <ListBox Grid.Row="1" Grid.Column="2" Margin="5" Name="lijstWoLB"></ListBox>
+        <ListBox Grid.Row="1" Grid.Column="3" Margin="5" Name="lijstDoLB"></ListBox>
+        <ListBox Grid.Row="1" Grid.Column="4" Margin="5" Name="lijstVrLB"></ListBox>
 
         <ListBox Grid.Row="4" Grid.ColumnSpan="2" Margin="5" Name="lijstVoltooiTakenLB"></ListBox>
 
