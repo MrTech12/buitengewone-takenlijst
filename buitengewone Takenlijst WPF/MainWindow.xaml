@@ -26,7 +26,7 @@
         <Label Grid.Column="0" Margin="0, 5, 0, 0" Content="Naam van taak"></Label>
         <Label Grid.Column="0" Margin="0, 28, 0, 0" Content="Vervaldatum"></Label>
 
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="100, 10, 0, 35">
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="100, 10, 0, 35" Name="taakInvoerPanel">
             <TextBox Name="userInputTB"></TextBox>
             <ComboBox Name="selectDagCB" Margin="0, 3, 0, 0">
                 <ComboBoxItem Content="Maandag"></ComboBoxItem>
@@ -35,17 +35,17 @@
                 <ComboBoxItem Content="Donderdag"></ComboBoxItem>
                 <ComboBoxItem Content="Vrijdag"></ComboBoxItem>
             </ComboBox>
-            <Button Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 20, 20, 0" Click="taakToevoegBT_Click">Taak Toevoegen</Button>
+            <Button Grid.Column="0" Grid.ColumnSpan="2" Margin="20, 20, 20, 0" Click="taakToevoegBT_Click" Name="taakToevoegBT" Content="Taak Toevoegen"></Button>
         </StackPanel>
 
         <Label Grid.Column="4" Margin="0, 10, 60, 100" Content="Aantal taken"></Label>
         <Label Grid.Column="4" Margin="0, 30, 60, 80" Content="Voltooide taken"></Label>
-        <Label Grid.Column="4" Margin="100, 10, 0, 100" Name="aantalTaakLB" Content="0"></Label>
-        <Label Grid.Column="4" Margin="100, 30, 0, 78" Name="aantalVoltooiTaakLB" Content="0"></Label>
+        <Label Grid.Column="4" Margin="100, 10, 30, 100" Name="aantalTaakLB" Content="0"></Label>
+        <Label Grid.Column="4" Margin="100, 30, 30, 82" Name="aantalVoltooiTaakLB" Content="0"></Label>
 
-        <StackPanel Grid.Column="4" Margin="10, 60, 10, 15">
-            <Button Margin="0, 5, 0, 0" Content="Taak afvinken"></Button>
-            <Button Margin="0, 10, 0, 0" Content="Taak verwijderen"></Button>
+        <StackPanel Grid.Column="4" Margin="10, 60, 10, 15" Name="taakManipulatiePanel">
+            <Button Margin="0, 5, 0, 0" Name="taakAfvink" Click="taakAfvink_Click" Content="Taak afvinken"></Button>
+            <Button Margin="0, 10, 0, 0" Name="taakVerwijder" Click="taakVerwijder_Click" Content="Taak verwijderen"></Button>
         </StackPanel>
         
         <ListBox Grid.Row="1" Grid.Column="0" Margin="5" Name="lijstMaLB"></ListBox>
@@ -56,7 +56,7 @@
 
         <ListBox Grid.Row="4" Grid.ColumnSpan="2" Margin="5" Name="lijstVoltooiTakenLB"></ListBox>
 
-        <Button Grid.Column="2" Grid.Row="4" Margin="10, 50, 10, 50" Content="Toon voltooide taken"></Button>
+        <Button Grid.Column="2" Grid.Row="4" Margin="10, 50, 10, 50" Name="toonVoltooiTaken" Click="toonVoltooiTaken_Click" Content="Toon voltooide taken"></Button>
         
     </Grid>
 </Window>
